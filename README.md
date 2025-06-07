@@ -15,6 +15,10 @@
 ---
 Pada tugas ini, kelompok kami mendapat **Soal Nomor 28** yang membahas **Interpolasi Stirling**.
 
+![image](https://github.com/user-attachments/assets/a1b582a0-98cb-4b01-bd7f-3c5510e948b2)
+
+![Screenshot 2025-06-07 191319](https://github.com/user-attachments/assets/492fcbb4-7431-4550-a99e-d1b560f3b7af)
+
 ## Penjelasan Kode
 
 ### 1. Import Library
@@ -25,7 +29,6 @@ from sympy import Rational, factorial, simplify
 ```
 
 ### 2. Menyusun Tabel Selisih
-
 Fungsi berikut akan menghitung **tabel selisih terhingga** (∆f(x), ∆²f(x), dst.) yang nanti digunakan dalam perhitungan utama.
     
 ```python
@@ -42,8 +45,7 @@ def compute_diff_table(y_vals):
 ```
 
 ### 3. Fungsi Utama: Stirling Interpolation
-   
-untuk mencari nilai h, s, dan setiap delta
+untuk mencari nilai h, s, dan setiap delta, kemudian tidak lupa dibulatkan 2 angka dibelakang koma pakai `round()`
 
 ```python
 def stirling_interpolation(x_vals, y_vals, x0_val, x_target_val):
@@ -88,7 +90,6 @@ def stirling_interpolation(x_vals, y_vals, x0_val, x_target_val):
 ```
 
 ### 4. Input Data & Eksekusi Interpolasi
-    
 kita input data yang diketahui, kemudian panggil fungsi `stirling_interpolation` untuk mencari hasil
     
 ```python
