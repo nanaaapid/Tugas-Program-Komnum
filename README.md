@@ -20,8 +20,8 @@ Pada tugas ini, kelompok kami mendapat **Soal Nomor 28** yang membahas **Interpo
 ### 1. Import Library
     
 ```python
-    import numpy as np
-    from sympy import Rational, factorial, simplify
+import numpy as np
+from sympy import Rational, factorial, simplify
 ```
 
 ### 2. Menyusun Tabel Selisih
@@ -105,7 +105,7 @@ print(f"\nf({xt}) = {hasil}")
 print(f"Et ={abs((yt - hasil)/yt) * 100 : .2f}")
 ```
 
-Output hasil dari f(16) dan nilai Et akan seperti ini :
+Output hasil untuk f(16) dan nilai Et akan didapat seperti ini :
     
 ![Screenshot 2025-06-07 192146](https://github.com/user-attachments/assets/2e16ed28-1f1c-4c32-92b2-77de53813ad5)
 
